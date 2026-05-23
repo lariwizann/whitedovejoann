@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Dove | 你很安全</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="dove">🕊️</span>
+                <span class="logo-text">White Dove</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#home" class="nav-link" data-en="Home" data-zh="首页">Home</a>
+                <a href="#about" class="nav-link" data-en="About" data-zh="关于">About</a>
+                <a href="#sharing" class="nav-link" data-en="Sharing" data-zh="分享">Sharing</a>
+                <a href="#journal" class="nav-link" data-en="Journal" data-zh="日记">Journal</a>
+                <a href="#resources" class="nav-link" data-en="Resources" data-zh="资源">Resources</a>
+            </div>
+            
+            <div class="nav-right">
+                <button id="lang-toggle" class="lang-btn">English | 中文</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-en="White Dove" data-zh="白鸽">White Dove</h1>
+            <p class="hero-slogan" data-en="You are safe here." data-zh="你在这里很安全。">You are safe here.</p>
+            <p class="hero-subtitle" data-en="A calm anonymous emotional support space for students" data-zh="给学生们一个安静、匿名的心灵支持空间">
+                A calm anonymous emotional support space for students
+            </p>
+            
+            <div class="hero-buttons">
+                <a href="#sharing" class="btn primary-btn" data-en="Start Sharing" data-zh="开始分享">Start Sharing</a>
+                <a href="#journal" class="btn secondary-btn" data-en="Open Journal" data-zh="打开日记">Open Journal</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2 data-en="Created with Love by Joann" data-zh="Joann 用爱制作">Created with Love by Joann</h2>
+            <p data-en="A gentle space for students feeling overwhelmed." data-zh="献给所有感到压力的学生们。">
+                A gentle space for students feeling overwhelmed.
+            </p>
+        </div>
+    </section>
+
+    <!-- Anonymous Sharing -->
+    <section id="sharing" class="section">
+        <div class="section-header">
+            <h2 data-en="Anonymous Sharing" data-zh="匿名分享">Anonymous Sharing</h2>
+        </div>
+        <div class="sharing-container">
+            <textarea id="share-text" placeholder="Write your thoughts here... 这里写下你的心情..." rows="6"></textarea>
+            <button id="share-btn" class="btn primary-btn">🕊️ Share Anonymously</button>
+        </div>
+    </section>
+
+    <!-- Mood Journal -->
+    <section id="journal" class="section">
+        <div class="section-header">
+            <h2 data-en="Mood Journal" data-zh="心情日记">Mood Journal</h2>
+        </div>
+        <div class="journal-main">
+            <textarea id="journal-text" placeholder="Dear Joann's journal..." rows="8"></textarea>
+            <button id="save-journal" class="btn primary-btn">Save Entry</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with 🕊️ by <strong>Joann</strong></p>
+        <p class="copyright">© 2026 White Dove • For University Application</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
