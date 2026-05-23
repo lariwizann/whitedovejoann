@@ -1,0 +1,126 @@
+:root {
+    --cream: #f8f5f0;
+    --blue: #a3c4d4;
+    --green: #b8d5b8;
+    --text: #2c3e50;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(248, 245, 240, 0.95);
+    backdrop-filter: blur(12px);
+    z-index: 1000;
+    border-bottom: 1px solid #e8e0d0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    background: linear-gradient(135deg, #f8f5f0, #e8f0e8);
+}
+
+.hero-title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-slogan {
+    font-size: 2.4rem;
+    color: var(--blue);
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    padding: 16px 36px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 10px;
+}
+
+.primary-btn {
+    background: #7a9eb8;
+    color: white;
+    border: none;
+}
+
+.primary-btn:hover {
+    background: #5f7f96;
+    transform: translateY(-4px);
+}
+
+.section {
+    padding: 100px 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: block;
+    padding: 2rem;
+    border: 2px solid #e0d8c8;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    resize: vertical;
+    min-height: 220px;
+}
+
+.footer {
+    text-align: center;
+    padding: 3rem;
+    background: #2c3e50;
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .hero-title { font-size: 3.5rem; }
+    .hero-slogan { font-size: 1.8rem; }
+}
